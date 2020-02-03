@@ -9,7 +9,10 @@ Requirements
 
 Role Variables
 --------------
-
+vm_networks:
+* name: Name of network
+* vlan: VLAN ID
+* datacenter: oVirt Data Center
 
 Dependencies
 ------------
