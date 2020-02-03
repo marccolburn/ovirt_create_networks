@@ -1,0 +1,9 @@
+---
+- name: Create networks
+  ovirt_network:
+    data_center: "{{ item.datacenter }}"
+    name: "{{ item.name }}"
+    vlan_tag: "{{ item.vlan }}"
+    vm_network: True
+    state: present
+  loop: "{{ vm_networks }}"
