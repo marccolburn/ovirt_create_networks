@@ -3,6 +3,9 @@ vm_networks:
   - name: default1
     vlan: 999
     datacenter: default
+    clusters:
+      - name: Default
+        assigned: True
 
 ovirt_hosts:
   - name: host1

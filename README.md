@@ -13,6 +13,9 @@ vm_networks:
 * name: Name of network
 * vlan: VLAN ID
 * datacenter: oVirt Data Center
+* clusters: Clusters to assign network to
+  * name: Name of cluster to assign
+  * assigned: Is the network assigned to this cluster T/F
 
 
 ovirt_hosts:
