@@ -14,6 +14,13 @@ vm_networks:
 * vlan: VLAN ID
 * datacenter: oVirt Data Center
 
+
+ovirt_hosts:
+* name: Name of host
+* interface: Name of interface to attach network to
+* networks: List of networks
+  * name: Name of network to be attached
+
 Dependencies
 ------------
 

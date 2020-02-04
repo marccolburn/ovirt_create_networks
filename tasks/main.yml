@@ -7,3 +7,10 @@
     vm_network: True
     state: present
   loop: "{{ vm_networks }}"
+
+- name: Attach networks to hosts
+  ovirt_host_network:
+    name: "{{ item.name }}"
+    interface: "{{ item.interface }}"
+    networks: "{{ item.networks }}"
+  loop: "{{ ovirt_hosts }}"
